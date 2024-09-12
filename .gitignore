@@ -10,11 +10,6 @@
 # Ignore the build directory
 /build
 
-# Ignore stuff for manual generation
-/source/manual/_master.html.erb
-/source/manual/_stable.html.erb
-/source/manual/_stable_version.html.erb
-
 # Ignore Sass' cache
 /.sass-cache
 
