@@ -11,7 +11,6 @@
 /build
 
 # Ignore stuff for manual generation
-/mpv
 /source/manual/_master.html.erb
 /source/manual/_stable.html.erb
 /source/manual/_stable_version.html.erb
