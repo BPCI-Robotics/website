@@ -7,6 +7,22 @@ helpers do
     "/installation"
   end
 
+  def test_path
+    "/test"
+  end
+
+  def team_code
+    "41977B"
+  end
+
+  def team_name
+    "B(ro)botics"
+  end
+
+  def club_name
+    "Birchmount Robotics Club"
+  end
+  
   def guides_path
     "/guides"
   end

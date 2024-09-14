@@ -3,29 +3,15 @@
     .navbar-header
       - unless homepage?
         %a.hidden-xs.navbar-brand{href: "/"}
-          = image_tag "mpv-logo-128.png", width: "40", height: "40"
-          %span.title mpv
+          = image_tag "allen-circle.png", width: "40", height: "40"
+          %span.title
+            B(ro)botics | 
+            %code 41977B 
           %i.fa.fa-home
 
     .pull-right
       %ul.nav.navbar-nav
         %li{nav_class(installation_path)}
-          = link_to installation_path do
-            %i.fa.fa-cloud-download
-            Installation
-        / %li{nav_class(guides_path)}
-        /   = link_to guides_path do
-        /     %i.fa.fa-book
-        /     Guides
-        %li{nav_class(manual_path)}
-          = link_to manual_path do
-            %i.fa.fa-book
-            Reference
-        %li{nav_class(bug_reports_path)}
-          = link_to bug_reports_path do
-            %i.fa.fa-bug
-            Bug Reports
-        %li{nav_class(community_path)}
-          = link_to community_path do
-            %i.fa.fa-comments
-            Community
+          = link_to test_path do
+            %i.fa.fa-flask
+            Test
