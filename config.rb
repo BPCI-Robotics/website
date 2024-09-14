@@ -36,7 +36,7 @@ helpers do
   end
 
   def github_path
-    "https://github.com/mpv-player/mpv"
+    "https://github.com/BPCI-Robotics"
   end
 
   def twitter_path
