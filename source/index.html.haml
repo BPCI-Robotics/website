@@ -3,8 +3,15 @@
     %h1
       // = image_tag "mpv-logo-128.png", width: "45", height: "45"
       Birchmount Robotics Club
-    %img{src:"/images/Group pic 3.jpg", class: 'team-picture', alt: "Picture of the robotics team at the competition."}
+    /%img{src:"/images/Group pic 3.jpg", class: 'team-picture', alt: "Picture of the robotics team at the competition."}
 .main-content
+  .carousel.slide.carousel-inner.d-block.w-100{id: "mainCarousel", data: {ride: "carousel"}}
+    .carousel-item.active
+      %img{src: "/images/Group pic 3.jpg", alt: "Picture of the robotics team at the competition"}
+    
+    .carousel-item
+      %img{src: }
+
   .container
     = partial :overview
 
