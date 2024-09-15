@@ -1,17 +1,12 @@
 .jumbotron
   .container
     %h1
-      // = image_tag "mpv-logo-128.png", width: "45", height: "45"
+      %img{src: "/images/allen-circle.png", alt: "The club logo, depicting Allen the monkey.", width: 48, height: 48}
       Birchmount Robotics Club
-    /%img{src:"/images/Group pic 3.jpg", class: 'team-picture', alt: "Picture of the robotics team at the competition."}
-.main-content
-  .carousel.slide.carousel-inner.d-block.w-100{id: "mainCarousel", data: {ride: "carousel"}}
-    .carousel-item.active
-      %img{src: "/images/Group pic 3.jpg", alt: "Picture of the robotics team at the competition"}
     
-    .carousel-item
-      %img{src: }
+    %img{src: "/images/Group pic 3.png", alt: "Picture of the robotics team at the competition working", id: "main-image", style: "width: 1000px; height: 500px; object-fit: contain;"}
 
+.main-content
   .container
     = partial :overview
 
