@@ -44,6 +44,10 @@ helpers do
     end
   end
 
+  def person_image(name)
+    "<div class='ms-auto'><img src='images/#{name}.jpg' alt='Picture of #{name}'/></div>"
+  end
+
   def homepage?
     current_page.url == "/"
   end
