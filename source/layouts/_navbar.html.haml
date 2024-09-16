@@ -10,8 +10,26 @@
           %i.fa.fa-home
 
     .pull-right
+      / We are using an older version of FontAwesome (4.5.0), so these icons aren't optimal.
       %ul.nav.navbar-nav
-        %li{nav_class(installation_path)}
-          = link_to test_path do
-            %i.fa.fa-flask
-            Test
+        - unless homepage?
+          %li
+            = link_to home_page do
+              %i.fa.fa-home
+              Home
+        %li
+          = link_to projects_page do
+            %i.fa.fa-cube
+            Projects
+        %li
+          = link_to documentation_page do
+            %i.fa.fa-book
+            Docs
+        %li
+          = link_to contact_page do
+            %i.fa.fa-user
+            Contact
+        %li
+          %a{href: "https://schoolweb.tdsb.on.ca/birchmountpark"}
+            %i.fa.fa-building
+            School Website

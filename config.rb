@@ -3,12 +3,21 @@ activate :directory_indexes
 activate :livereload
 
 helpers do
-  def installation_path
-    "/installation"
+  
+  def home_page
+    "/"
   end
 
-  def test_path
-    "/test"
+  def projects_page
+    "/projects"
+  end
+
+  def documentation_page
+    "/docs"
+  end
+
+  def contact_page
+    "/contact"
   end
 
   def team_code
@@ -22,45 +31,9 @@ helpers do
   def club_name
     "Birchmount Robotics Club"
   end
-  
-  def guides_path
-    "/guides"
-  end
-
-  def getting_started_path
-    "/guides/getting-started"
-  end
-
-  def bug_reports_path
-    "/bug-reports"
-  end
-
-  def community_path
-    "/community"
-  end
-
-  def manual_path
-    "/manual"
-  end
-
-  def manual_master_path
-    "/manual/master"
-  end
-
-  def manual_stable_path
-    "/manual/stable"
-  end
 
   def github_path
     "https://github.com/BPCI-Robotics"
-  end
-
-  def twitter_path
-    "https://twitter.com/mpv_player"
-  end
-
-  def issues_path
-    "https://github.com/mpv-player/mpv/issues"
   end
 
   def nav_class(path)
