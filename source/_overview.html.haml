@@ -4,14 +4,48 @@
 
 %h2 Our Members
 
+
+.container
+  .row
+    .col-md-6
+      .d-flex
+        %img{src: "images/Tyler.jpg", class: "img-fluid", alt: "Image 1", style: "width: 100px;"}
+        .ml-3
+          %p.mb-0
+            | This is the text associated with the first image. It will be aligned to the right of the image, with no large gap.
+    .col-md-6
+      .d-flex
+        %img{src: "images/Tyler.jpg", class: "img-fluid", alt: "Image 2", style: "width: 100px;"}
+        .ml-3
+          %p.mb-0
+            | This is the text associated with the second image. It will be aligned to the right of the image.
+
+.container
+  .row
+    .col-6
+      .d-flex.align-items-center
+        = person_image("Tyler")
+        .ml-3
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
 .row
-  .col-md-3
+  .col-2
     = person_image("Tyler")
-  .col-md-3
+  .col-4
     %h4 Tyler
     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  .col-md-3
+  .col-2
     = person_image("Wesley")
-  .col-md-3
+  .col-4
+    %h4 Wesley
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  .col-2
+    = person_image("Wesley")
+  .col-4
+    %h4 Wesley
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  .col-2
+    = person_image("Wesley")
+  .col-4
     %h4 Wesley
     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -45,7 +45,7 @@ helpers do
   end
 
   def person_image(name)
-    "<div class='ms-auto'><img src='images/#{name}.jpg' alt='Picture of #{name}'/></div>"
+    "<img src='images/#{name}.jpg' alt='Picture of #{name}' class='img-fluid' style='width: 100px;'/>"
   end
 
   def homepage?
