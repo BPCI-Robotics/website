@@ -4,48 +4,23 @@
 
 %h2 Our Members
 
-
 .container
   .row
-    .col-md-6
-      .d-flex
-        %img{src: "images/Tyler.jpg", class: "img-fluid", alt: "Image 1", style: "width: 100px;"}
-        .ml-3
-          %p.mb-0
-            | This is the text associated with the first image. It will be aligned to the right of the image, with no large gap.
-    .col-md-6
-      .d-flex
-        %img{src: "images/Tyler.jpg", class: "img-fluid", alt: "Image 2", style: "width: 100px;"}
-        .ml-3
-          %p.mb-0
-            | This is the text associated with the second image. It will be aligned to the right of the image.
+    = person_description("Tyler", "Tyler is a hard worker, and has a special ability to design ")
+    = person_description("Aseer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
 
-.container
+    
   .row
-    .col-6
-      .d-flex.align-items-center
-        = person_image("Tyler")
-        .ml-3
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    = person_description("Wesley", "Wesley can effectively solve programming problems, and come up with creative solutions to problems encountered. With previous experience in programming, Wesley is a great choice for lead of programming.")
+    = person_description("Colin", "A great builder, designer, and driver, Colin is a valuable member of the team as he can look at the design process as a whole, from the drivetrain to driving on the field.")
 
-.row
-  .col-2
-    = person_image("Tyler")
-  .col-4
-    %h4 Tyler
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  .col-2
-    = person_image("Wesley")
-  .col-4
-    %h4 Wesley
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  .col-2
-    = person_image("Wesley")
-  .col-4
-    %h4 Wesley
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  .col-2
-    = person_image("Wesley")
-  .col-4
-    %h4 Wesley
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+  .row
+    = person_description("Rohan", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+    = person_description("Wadid", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+
+
+  .row
+    = person_description("Parthib", "Parthib is a brilliant student who can find flaws in designs that nobody else even thought about. ")
+    = person_description("Turhan", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+    

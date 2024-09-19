@@ -45,7 +45,12 @@ helpers do
   end
 
   def person_image(name)
-    "<img src='images/#{name}.jpg' alt='Picture of #{name}' class='img-fluid' style='width: 100px;'/>"
+    "<img src='images/#{name}.jpg' alt='Picture of #{name}' class='rounded'/>"
+  end
+
+  def person_description(name, desc)
+    "<div class='col-md-2'>#{person_image(name)}</div>" +
+    "<div class='col-md-4'><h4>#{name}</h4><p>#{desc}</p></div>" 
   end
 
   def homepage?
