@@ -8,10 +8,10 @@ cd ../website
 
 rm -r ./build/*
 bundle exec middleman build
-cp ../BPCI-Robotics.github.io/.git ./build
+cp -r ../BPCI-Robotics.github.io/.git ./build
 
 rm -rf ../BPCI-Robotics.github.io/*
-cp ./build ../BPCI-Robotics.github.io
+cp -r ./build/* ../BPCI-Robotics.github.io
 
 cd ../BPCI-Robotics.github.io
 git add .
